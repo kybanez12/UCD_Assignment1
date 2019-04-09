@@ -1,3 +1,7 @@
+main {
+    float: left;
+}
+
 ul.navbar {
     list-style-type: none;
     margin: 0;
@@ -20,4 +24,69 @@ li.navbar a {
 
 li.navbar a:hover {
     background-color: black;
+}
+
+
+#sidebar {
+    position: relative;
+    float: right;
+    width: 25%;
+    top: 0px;
+    bottom: 0px;
+    padding: 10px;
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 3px 3px 3px 2px #797979;
+}
+
+.heading {
+    text-shadow: #aaa 2px 2px 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*selector for h1 and special headings to make them center*/
+.heading.special {
+    text-align: center;
+}
+
+.content {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* creates box around articles */
+article.content { 
+    width: 910px;
+    height: 25%;
+    box-shadow: 3px 3px 3px 2px #797979;
+    padding: 10px;
+}
+
+section.content {
+    width: 910px;
+    height: 25%;
+    box-shadow: 3px 3px 3px 2px #797979;
+    padding: 10px;
+}
+
+.images {
+    text-align: center;
+    margin: 30px;
+}
+
+.timetable {
+    border-collapse: collapse;
+}
+
+.timetable th, td {
+    border: 1px solid black;
+    
+}
+
+#footer {
+    font-size: 10px;
+    margin: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    clear: both;
+    position: relative;
 }

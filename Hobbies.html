@@ -3,6 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="desciprtion" content="Web Development Assignment" />
     <meta name="keywords" content="HTML CSS Javascript" />
     <meta name="author" content="Kristian Ybanez" />
@@ -13,13 +14,51 @@
     <nav>
         <ul class="navbar">
             <li class="navbar"><a href="Home.html">Home</a></li>
-            <li class="navbar"><a href="AboutMe.html">About ME</a></li>
+            <li class="navbar"><a href="AboutMe.html">About Me</a></li>
             <li class="navbar"><a href="Hobbies.html">Hobbies</a></li>
         </ul>
     </nav>
-    <header>
-        <h1>Yookoso!</h1>
-        <h3>Welcome to my website made using HTML, CSS and Javascript</h3>
-    </header>
-</body>
+    
+    <main id="hobbiesmain">
+        <header>
+            <h1 class="heading special">All things boards!</h1>
+        </header>
+        <!--Skate-->
+        <article class="content">
+            <h3>Skateboarding heals the soul</h3>
+            <p class="content">When I'm not studying or coding, I usually go down to the local skate park and skate with the homies. Skateboarding relieves my stress and keeps me fit. </p>
+            <div class="images">
+                    <img src="images/skate.jpg" alt="Me doing a heelflip" width="400">
+            </div>
+        </article>
+
+        <footer id="footer">
+                Copyright 2019, Kristian Ybanez
+        </footer>
+    </main>
+
+    <aside id="sidebar">
+        <!--list of favorite stuff-->
+        <section class="">
+            <h3 class="heading">Other things I enjoy doing</h3>
+            <ul>
+                <li>Spending time with my girlfriend</li>
+                <li>Snowboarding</li>
+                <li>Reading Japanese manga</li>
+                <li>Listening to music</li>
+            </ul>
+        </section>
+        
+        <section class="">
+                <h3 class="heading">What do you ride?</h3>
+                <form action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php" method="POST">
+                    <input type="checkbox" name="ride1" value="skateboard">Skateboard <br>
+                    <input type="checkbox" name="ride2" value="scooter">Scooter <br>
+                    <input type="checkbox" name="ride3" id="" value="bike"> Bike <br>
+                    <input type="checkbox" name="ride4" id="" value="train">Train <br>
+                    <input type="submit" value="Submit" id="">
+                </form>
+            </section>       
+    </aside>
+</body>     
 </html>

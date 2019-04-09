@@ -1,25 +1,104 @@
 ﻿<!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <meta name="desciprtion" content="Web Development Assignment" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Web Development Assignment" />
     <meta name="keywords" content="HTML CSS Javascript" />
     <meta name="author" content="Kristian Ybanez" />
     <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
     <title>September's very own</title>
 </head>
 <body>
+    <!--Horizontal NavBar-->
     <nav>
         <ul class="navbar">
             <li class="navbar"><a href="Home.html">Home</a></li>
-            <li class="navbar"><a href="AboutMe.html">About ME</a></li>
+            <li class="navbar"><a href="AboutMe.html">About Me</a></li>
             <li class="navbar"><a href="Hobbies.html">Hobbies</a></li>
         </ul>
     </nav>
-    <header>
-        <h1>Yookoso!</h1>
-        <h3>Welcome to my website made using HTML, CSS and Javascript</h3>
-    </header>
+    <main>
+        <header>
+            <h1 class="heading special">Where I be</h1>
+        </header>
+
+        <!--Demographic info about me-->
+        <article class="content">
+            <h3 class="heading">Hometown</h3>
+            <p class="content">
+                I was born an raised in the south eastern suburbs, primarily in Springvale. Over recent years have seen Springvale grow into a hub for the asian community. 
+                Littered with asian markets and restaurants, people travel from across the city to have a taste of what Springvale has to offer. You can't say no to a bowl of pho!   
+            </p>
+        </article>
+
+        <!--Greatest achievement-->
+        <article class="content">
+            <h3 class="heading">Greatest achievement</h3>
+            <p class="content">
+                The greatest achievement of my life would have to be snowboarding in Japan. To be more specific, snowboarding a Triple Diamond Black run at Niseko, Japan.
+                By far the greatest moment of my life.
+            </p>
+            <!--image container-->
+            <div class="images">
+                <img src="images/snow.jpg" alt="My girlfriend and I at Tsukaige Kougen" width="300">
+            </div>
+        </article>
+
+
+        <!--Timetable-->
+        <section class="content">
+            <h3 class="heading special">Swinburne Timetable</h3>
+            <table class="timetable" align="center">
+                <tr>
+                    <th>Subject</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <td>INF10003</td>
+                    <td>Lecture 2:30PM-4:30PM</td>
+                    <td></td>
+                    <td>Lab 5:30PM-7:30PM</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>COS20001</td>
+                    <td>Lecture 6:30PM-8:30PM</td>
+                    <td></td>
+                    <td>Lab 2:30PM-4:30PM</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>JPN10013</td>
+                    <td></td>
+                    <td>Class 8:30AM-10:30AM</td>
+                    <td></td>
+                    <td></td>
+                    <td>Class 12:30PM-2:30PM</td>
+                </tr>
+                <tr>
+                    <td>COS10005</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Lecture 8:30AM-10:30AM <br/>Lab 10:30AM-11:30AM</td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+        <footer id="footer">
+                Copyright 2019, Kristian Ybanez
+        </footer>
+    </main>
+
+    
 </body>
 </html>
+
