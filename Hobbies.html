@@ -1,64 +1,85 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="desciprtion" content="Web Development Assignment" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML CSS Javascript" />
     <meta name="author" content="Kristian Ybanez" />
     <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
-    <title>September's very own</title>
+    <link rel="stylesheet" media="screen and (min-width: 640)" href="css/mobile_stylesheet.css" type="text/css">
+    <title>All things boards</title>
 </head>
 <body>
-    <nav>
-        <ul class="navbar">
-            <li class="navbar"><a href="Home.html">Home</a></li>
-            <li class="navbar"><a href="AboutMe.html">About Me</a></li>
-            <li class="navbar"><a href="Hobbies.html">Hobbies</a></li>
-        </ul>
-    </nav>
-    
-    <main id="hobbiesmain">
-        <header>
-            <h1 class="heading special">All things boards!</h1>
-        </header>
-        <!--Skate-->
-        <article class="content">
-            <h3>Skateboarding heals the soul</h3>
-            <p class="content">When I'm not studying or coding, I usually go down to the local skate park and skate with the homies. Skateboarding relieves my stress and keeps me fit. </p>
-            <div class="images">
-                    <img src="images/skate.jpg" alt="Me doing a heelflip" width="400">
-            </div>
-        </article>
+    <header class="header">
+        <h1>Hobbies!</h1>       
+    </header>
 
-        <footer id="footer">
-                Copyright 2019, Kristian Ybanez
-        </footer>
-    </main>
-
-    <aside id="sidebar">
-        <!--list of favorite stuff-->
-        <section class="">
-            <h3 class="heading">Other things I enjoy doing</h3>
-            <ul>
-                <li>Spending time with my girlfriend</li>
-                <li>Snowboarding</li>
-                <li>Reading Japanese manga</li>
-                <li>Listening to music</li>
+    <!--Side nav menu-->
+    <div class="navmenu">
+        <nav>
+            <ul class="menu">
+                <li class="menu"><a href="Home.html">Home</a></li>
+                <li class="menu"><a href="AboutMe.html">About Me</a></li>
+                <li class="menu"><a href="Hobbies.html">Hobbies</a></li>
+                <li class="menu"><a href="animations.html">Animations</a></li>
             </ul>
-        </section>
-        
-        <section class="">
-                <h3 class="heading">What do you ride?</h3>
-                <form action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php" method="POST">
-                    <input type="checkbox" name="ride1" value="skateboard">Skateboard <br>
-                    <input type="checkbox" name="ride2" value="scooter">Scooter <br>
-                    <input type="checkbox" name="ride3" id="" value="bike"> Bike <br>
-                    <input type="checkbox" name="ride4" id="" value="train">Train <br>
-                    <input type="submit" value="Submit" id="">
-                </form>
-            </section>       
-    </aside>
-</body>     
+        </nav>
+    </div>
+
+    <!--Main Content-->
+    <main class="main">
+        <article>
+            <!--Things I like-->
+            <!--Positioned inside aside-->
+            <aside class="aside">
+                <h4>List of things I like doing(From highest to lowest)</h4>
+                    <ol>
+                        <li>Spending time with my girlfriend</li>
+                        <li>Snowboarding</li>
+                        <li>Reading Japanese manga</li>
+                        <li>Listening to music</li>
+                    </ol>
+            </aside> 
+
+            <!--Skateboarding-->
+            <section>
+                <h2>Skateboarding heals my soul</h2>
+                <p class="center">
+                    When I'm not studying or coding, I usually go down to the local skate park and skate with the homies. Skateboarding relieves my stress and keeps me fit.
+                </p>
+            </section>
+            <div class="images">
+                    <img src="images/skate.jpg" alt="Me doing a heelflip">
+            </div>
+            <hr>
+
+            <!--Query Form-->
+            <section>
+                <h2>What do you ride?</h2>
+                    <div class="form">
+                        <form action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php" method="POST">
+                            <label for="sb">Skateboarding</label>
+                            <input type="checkbox" id="sb" name="ride1" value="skateboard"><br>
+                            <label for="sc">Scooter</label>
+                            <input type="checkbox" id="sc" name="ride2" value="scooter"><br>
+                            <label for="b">Bike</label>                                
+                            <input type="checkbox" id="b" name="ride3" value="bike"><br>
+                            <label for="tr">Train</label>
+                            <input type="checkbox" id="tr" name="ride4"value="train"><br>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+            </section>
+        </article>
+         
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+            No animals were hurt during the making of this webpage <br>
+                    Copyright 2019, Kristian Ybanez
+    </footer>
+    
+</body>
 </html>

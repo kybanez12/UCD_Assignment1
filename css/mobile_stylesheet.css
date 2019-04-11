@@ -1,0 +1,100 @@
+/*For mobile, animations are disabled and elements are stacked beneath each other*/
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background-color: chocolate;
+    color: black;
+    padding: 15px;
+    margin-bottom: 8px;
+}
+
+/*main containers are set to fit screen*/
+.main {
+    width: 100%;
+    
+}
+.navmenu {
+    width: 100%;
+
+}   
+.aside {
+    float: right;
+    position: relative;
+}
+
+/*Styles elements in main*/
+.main section {
+    padding-left: 10px;
+}
+.main input {
+    margin: 5px;
+}
+.main ul {
+    width: 100%;
+    margin: 0% auto;
+    display: table;
+    list-style-position: inside;
+}
+
+/*Styles elements in navmenu*/
+.navmenu ul.menu {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+.navmenu li.menu {
+    padding: 8x;
+    margin-bottom: 7px;
+    background-color:white;
+    color: black;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);  
+}
+.navmenu li.menu:hover {
+    background-color: peru;
+    -webkit-animation: swing 1s ease;
+    animation:  swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.navmenu div {  
+    margin: 70px;
+}
+
+/*styles all images*/
+.images {
+    transition: all .2s ease-in-out;
+    transform-origin: left top
+}
+.images img {
+    width: 250px;
+    border-style: solid;
+    border-width: 5px;
+    margin: 20px;
+}
+.images:hover {
+    transform: scale(1.5);
+}
+
+/*Styles timetable*/
+.timetable {
+    border-collapse: collapse;
+}
+
+.timetable th, td {
+    border: 1px solid black;
+}
+
+.footer {
+    background-color: chocolate;
+    font-size: 10px;
+    clear: both;
+    padding: 20px;  
+}
+
+
+
+
+
